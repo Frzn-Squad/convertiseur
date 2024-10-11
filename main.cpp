@@ -1,10 +1,11 @@
 #include <QApplication>
 #include "mainwindow.h"
-               int main(int argc, char **argv)
+
+int main(int argc, char **argv)
 {
-    QApplication app(argc, argv); // un objet QApplication
-    MaFenetre maFenetre; // un objet fenêtre
-    maFenetre.show(); // affiche la fenêtre
-    int ret = app.exec(); // exécute la boucle principale d’évènement
+    QApplication app(argc, argv); // Create a QApplication object
+    MaFenetre maFenetre; // Create a window object
+    maFenetre.show(); // Show the window
+    int ret = app.exec(); // Execute the main event loop
     return ret;
 }
